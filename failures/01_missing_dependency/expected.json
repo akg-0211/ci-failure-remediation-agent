@@ -1,0 +1,5 @@
+{
+  "category": "missing_dependency",
+  "root_cause": "main.py imports 'requests' but it is not listed in requirements.txt, so it is not installed in the Docker image.",
+  "fix": "Add 'requests' to sample_app/requirements.txt"
+}
