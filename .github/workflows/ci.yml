@@ -1,9 +1,6 @@
 name: CI
 
-on:
-  push:
-    branches: [main]
-  pull_request:
+on: [push, pull_request]
 
 jobs:
   build:
@@ -22,3 +19,7 @@ jobs:
         run: |
           sleep 5
           curl --fail http://localhost:8000/
+
+      - name: Show container logs on failure
+        if: failure()
+        run: docker logs app
