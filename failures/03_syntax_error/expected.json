@@ -1,0 +1,5 @@
+{
+  "category": "syntax_error",
+  "root_cause": "sample_app/main.py has syntax error in def home() function, so the app chashes",
+  "fix": "In sample_app/main.py apply correction at the end of def home() by putting this ':' after.   "
+}
