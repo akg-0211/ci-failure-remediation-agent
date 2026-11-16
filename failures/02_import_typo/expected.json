@@ -1,0 +1,5 @@
+{
+  "category": "import_typo",
+  "root_cause": "sample_app/main.py imports 'FastAPi' from fastapi, but the class is named 'FastAPI' (wrong capitalisation), so the app crashes on startup with ImportError.",
+  "fix": "In sample_app/main.py, change 'from fastapi import FastAPi' to 'from fastapi import FastAPI'"
+}
