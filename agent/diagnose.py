@@ -9,7 +9,8 @@ OLLAMA_URL = "http://localhost:11434/api/chat"
 MODEL = "qwen3"
 
 CATEGORIES = ["missing_dependency", "import_typo", "syntax_error",
-              "test_failure", "config_error", "other"]
+              "port_mismatch", "dockerfile_error", "dependency_version_error",
+              "config_error", "test_failure", "other"]
 
 SYSTEM_PROMPT = f"""You are a CI/CD failure diagnosis assistant.
 You will be given the relevant part of a failed GitHub Actions log for a Python FastAPI app built with Docker.
