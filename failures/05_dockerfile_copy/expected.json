@@ -1,0 +1,5 @@
+{
+  "category": "dockerfile_error",
+  "root_cause": "sample_app/Dockerfile copies 'requirement.txt' (missing the 's'), but the file in the repo is 'requirements.txt'. The Docker build fails at the COPY step, so no image or container is created.",
+  "fix": "In sample_app/Dockerfile, change 'COPY requirement.txt .' to 'COPY requirements.txt .'"
+}

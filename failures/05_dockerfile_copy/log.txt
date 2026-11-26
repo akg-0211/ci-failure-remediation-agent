@@ -1,0 +1,177 @@
+2026-11-26T00:48:41.2358611Z Current runner version: '2.338.2'
+2026-11-26T00:48:41.2383327Z ##[group]Runner Image Provisioner
+2026-11-26T00:48:41.2384216Z Hosted Compute Agent
+2026-11-26T00:48:41.2384951Z Version: 20261111.635
+2026-11-26T00:48:41.2385612Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-26T00:48:41.2386685Z Build Date: 2026-11-11T01:49:01Z
+2026-11-26T00:48:41.2387493Z Worker ID: {0a1cf576-5f66-4ed2-8a78-0dfdb432ad3a}
+2026-11-26T00:48:41.2388255Z Region: westus
+2026-11-26T00:48:41.2388776Z Cloud: Azure
+2026-11-26T00:48:41.2389374Z ##[endgroup]
+2026-11-26T00:48:41.2390860Z ##[group]Operating System
+2026-11-26T00:48:41.2391577Z Ubuntu
+2026-11-26T00:48:41.2392112Z 26.04.1
+2026-11-26T00:48:41.2392674Z LTS
+2026-11-26T00:48:41.2393238Z ##[endgroup]
+2026-11-26T00:48:41.2393788Z ##[group]Runner Image
+2026-11-26T00:48:41.2394409Z Image: ubuntu-26.04
+2026-11-26T00:48:41.2395024Z Version: 20261116.202.1
+2026-11-26T00:48:41.2396651Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-26T00:48:41.2398350Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+2026-11-26T00:48:41.2399384Z ##[endgroup]
+2026-11-26T00:48:41.2400636Z ##[group]GITHUB_TOKEN Permissions
+2026-11-26T00:48:41.2402837Z Contents: read
+2026-11-26T00:48:41.2403479Z Metadata: read
+2026-11-26T00:48:41.2404047Z Packages: read
+2026-11-26T00:48:41.2404975Z ##[endgroup]
+2026-11-26T00:48:41.2407291Z Secret source: Actions
+2026-11-26T00:48:41.2408353Z Cache mode: write
+2026-11-26T00:48:41.2409043Z Prepare workflow directory
+2026-11-26T00:48:41.2752025Z Prepare all required actions
+2026-11-26T00:48:41.2802996Z Getting action download info
+2026-11-26T00:48:41.6375850Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-26T00:48:41.8136583Z Complete job name: build
+2026-11-26T00:48:41.9094473Z ##[group]Run actions/checkout@v4
+2026-11-26T00:48:41.9095365Z with:
+2026-11-26T00:48:41.9095909Z   repository: akg-0211/ci-failure-remediation-agent
+2026-11-26T00:48:41.9099915Z   token: ***
+2026-11-26T00:48:41.9100388Z   ssh-strict: true
+2026-11-26T00:48:41.9100827Z   ssh-user: git
+2026-11-26T00:48:41.9101270Z   persist-credentials: true
+2026-11-26T00:48:41.9101760Z   clean: true
+2026-11-26T00:48:41.9102204Z   sparse-checkout-cone-mode: true
+2026-11-26T00:48:41.9102719Z   fetch-depth: 1
+2026-11-26T00:48:41.9103154Z   fetch-tags: false
+2026-11-26T00:48:41.9103602Z   show-progress: true
+2026-11-26T00:48:41.9104066Z   lfs: false
+2026-11-26T00:48:41.9104478Z   submodules: false
+2026-11-26T00:48:41.9104926Z   set-safe-directory: true
+2026-11-26T00:48:41.9105436Z   allow-unsafe-pr-checkout: false
+2026-11-26T00:48:41.9106202Z ##[endgroup]
+2026-11-26T00:48:42.1676431Z Syncing repository: akg-0211/ci-failure-remediation-agent
+2026-11-26T00:48:42.1678854Z ##[group]Getting Git version info
+2026-11-26T00:48:42.1680157Z Working directory is '/home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent'
+2026-11-26T00:48:42.1682353Z [command]/usr/bin/git version
+2026-11-26T00:48:42.1686020Z git version 2.56.1
+2026-11-26T00:48:42.1708196Z ##[endgroup]
+2026-11-26T00:48:42.1723057Z Temporarily overriding HOME='/home/runner/work/_temp/503c6d2d-4c66-42f8-808e-6a6341f5c139' before making global git config changes
+2026-11-26T00:48:42.1725490Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-26T00:48:42.1729758Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent
+2026-11-26T00:48:42.1793364Z Deleting the contents of '/home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent'
+2026-11-26T00:48:42.1796096Z ##[group]Initializing the repository
+2026-11-26T00:48:42.1802117Z [command]/usr/bin/git init /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent
+2026-11-26T00:48:42.1933879Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-26T00:48:42.1936384Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-26T00:48:42.1938222Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-26T00:48:42.1939678Z hint: call:
+2026-11-26T00:48:42.1940789Z hint:
+2026-11-26T00:48:42.1941814Z hint: 	git config --global init.defaultBranch <name>
+2026-11-26T00:48:42.1942948Z hint:
+2026-11-26T00:48:42.1944002Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-26T00:48:42.1945786Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-26T00:48:42.1947465Z hint:
+2026-11-26T00:48:42.1948389Z hint: 	git branch -m <name>
+2026-11-26T00:48:42.1949373Z hint:
+2026-11-26T00:48:42.1950573Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-26T00:48:42.1952961Z Initialized empty Git repository in /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent/.git/
+2026-11-26T00:48:42.1959168Z [command]/usr/bin/git remote add origin https://github.com/akg-0211/ci-failure-remediation-agent
+2026-11-26T00:48:42.2011652Z ##[endgroup]
+2026-11-26T00:48:42.2013031Z ##[group]Disabling automatic garbage collection
+2026-11-26T00:48:42.2016920Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-26T00:48:42.2059745Z ##[endgroup]
+2026-11-26T00:48:42.2061970Z ##[group]Setting up auth
+2026-11-26T00:48:42.2068633Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-26T00:48:42.2107932Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-26T00:48:42.2560027Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-26T00:48:42.2601846Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-26T00:48:42.2876702Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-26T00:48:42.2917675Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-26T00:48:42.3216556Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-26T00:48:42.3262556Z ##[endgroup]
+2026-11-26T00:48:42.3263314Z ##[group]Fetching the repository
+2026-11-26T00:48:42.3276898Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +15bdec1dacdc3a37b9d77e159d1277aeadb9d3f7:refs/remotes/origin/failure/05-dockerfile-copy
+2026-11-26T00:48:42.6569290Z From https://github.com/akg-0211/ci-failure-remediation-agent
+2026-11-26T00:48:42.6571122Z  * [new ref]         15bdec1dacdc3a37b9d77e159d1277aeadb9d3f7 -> origin/failure/05-dockerfile-copy
+2026-11-26T00:48:42.6575288Z ##[endgroup]
+2026-11-26T00:48:42.6576481Z ##[group]Determining the checkout info
+2026-11-26T00:48:42.6578350Z ##[endgroup]
+2026-11-26T00:48:42.6584098Z [command]/usr/bin/git sparse-checkout disable
+2026-11-26T00:48:42.6636906Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-26T00:48:42.6666170Z ##[group]Checking out the ref
+2026-11-26T00:48:42.6670832Z [command]/usr/bin/git checkout --progress --force -B failure/05-dockerfile-copy refs/remotes/origin/failure/05-dockerfile-copy
+2026-11-26T00:48:42.6752680Z Switched to a new branch 'failure/05-dockerfile-copy'
+2026-11-26T00:48:42.6758934Z branch 'failure/05-dockerfile-copy' set up to track 'origin/failure/05-dockerfile-copy'.
+2026-11-26T00:48:42.6764849Z ##[endgroup]
+2026-11-26T00:48:42.6809499Z [command]/usr/bin/git log -1 --format=%H
+2026-11-26T00:48:42.6833713Z 15bdec1dacdc3a37b9d77e159d1277aeadb9d3f7
+2026-11-26T00:48:42.7070919Z ##[group]Run docker build -t sample-app ./sample_app
+2026-11-26T00:48:42.7071736Z [36;1mdocker build -t sample-app ./sample_app[0m
+2026-11-26T00:48:42.7109344Z shell: /usr/bin/bash -e {0}
+2026-11-26T00:48:42.7109894Z ##[endgroup]
+2026-11-26T00:48:43.3222159Z #0 building with "default" instance using docker driver
+2026-11-26T00:48:43.3223314Z 
+2026-11-26T00:48:43.3223910Z #1 [internal] load build definition from Dockerfile
+2026-11-26T00:48:43.3225380Z #1 transferring dockerfile: 235B done
+2026-11-26T00:48:43.3226835Z #1 DONE 0.0s
+2026-11-26T00:48:43.3227365Z 
+2026-11-26T00:48:43.3228271Z #2 [internal] load metadata for docker.io/library/python:3.11-slim
+2026-11-26T00:48:43.5612216Z #2 ...
+2026-11-26T00:48:43.5612872Z 
+2026-11-26T00:48:43.5613395Z #3 [auth] library/python:pull token for registry-1.docker.io
+2026-11-26T00:48:43.5614638Z #3 DONE 0.0s
+2026-11-26T00:48:43.7113270Z 
+2026-11-26T00:48:43.7114457Z #2 [internal] load metadata for docker.io/library/python:3.11-slim
+2026-11-26T00:48:44.0739658Z #2 DONE 0.9s
+2026-11-26T00:48:44.1514645Z 
+2026-11-26T00:48:44.1515887Z #4 [internal] load .dockerignore
+2026-11-26T00:48:44.1516913Z #4 transferring context: 62B done
+2026-11-26T00:48:44.1517549Z #4 DONE 0.0s
+2026-11-26T00:48:44.1517834Z 
+2026-11-26T00:48:44.1518063Z #5 [internal] load build context
+2026-11-26T00:48:44.1518747Z #5 transferring context: 572B done
+2026-11-26T00:48:44.1519603Z #5 DONE 0.0s
+2026-11-26T00:48:44.1520977Z 
+2026-11-26T00:48:44.1521458Z #6 [2/5] WORKDIR /app
+2026-11-26T00:48:44.1522094Z #6 CACHED
+2026-11-26T00:48:44.1522369Z 
+2026-11-26T00:48:44.1522593Z #7 [3/5] COPY requirement.txt .
+2026-11-26T00:48:44.1528521Z #7 ERROR: failed to calculate checksum of ref r0fmo3j4wdedxdk73wtl7rj9q::ibkq5zwswajlgw2a7q957q0kg: "/requirement.txt": not found
+2026-11-26T00:48:44.1529668Z 
+2026-11-26T00:48:44.1530567Z #8 [1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+2026-11-26T00:48:44.1532326Z #8 resolve docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c 0.0s done
+2026-11-26T00:48:44.1533301Z #8 CANCELED
+2026-11-26T00:48:44.1533640Z ------
+2026-11-26T00:48:44.1534186Z  > [3/5] COPY requirement.txt .:
+2026-11-26T00:48:44.1534717Z ------
+2026-11-26T00:48:44.1613557Z Dockerfile:3
+2026-11-26T00:48:44.1614694Z --------------------
+2026-11-26T00:48:44.1615194Z    1 |     FROM python:3.11-slim
+2026-11-26T00:48:44.1615681Z    2 |     WORKDIR /app
+2026-11-26T00:48:44.1616016Z    3 | >>> COPY requirement.txt .
+2026-11-26T00:48:44.1616686Z    4 |     RUN pip install --no-cache-dir -r requirements.txt
+2026-11-26T00:48:44.1617070Z    5 |     COPY . .
+2026-11-26T00:48:44.1617323Z --------------------
+2026-11-26T00:48:44.1618135Z ERROR: failed to build: failed to solve: failed to compute cache key: failed to calculate checksum of ref r0fmo3j4wdedxdk73wtl7rj9q::ibkq5zwswajlgw2a7q957q0kg: "/requirement.txt": not found
+2026-11-26T00:48:44.1677958Z ##[error]Process completed with exit code 1.
+2026-11-26T00:48:44.1746958Z ##[group]Run docker logs app
+2026-11-26T00:48:44.1747369Z [36;1mdocker logs app[0m
+2026-11-26T00:48:44.1781489Z shell: /usr/bin/bash -e {0}
+2026-11-26T00:48:44.1781809Z ##[endgroup]
+2026-11-26T00:48:44.1968904Z Error response from daemon: No such container: app
+2026-11-26T00:48:44.1985687Z ##[error]Process completed with exit code 1.
+2026-11-26T00:48:44.2191585Z Post job cleanup.
+2026-11-26T00:48:44.3031677Z [command]/usr/bin/git version
+2026-11-26T00:48:44.3076987Z git version 2.56.1
+2026-11-26T00:48:44.3113165Z Temporarily overriding HOME='/home/runner/work/_temp/1af3ae8b-318b-4b88-a518-164b166339f5' before making global git config changes
+2026-11-26T00:48:44.3114749Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-26T00:48:44.3120797Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent
+2026-11-26T00:48:44.3161756Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-26T00:48:44.3209117Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-26T00:48:44.3506026Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-26T00:48:44.3534168Z http.https://github.com/.extraheader
+2026-11-26T00:48:44.3580638Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-26T00:48:44.3612330Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-26T00:48:44.3938843Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-26T00:48:44.3977291Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-26T00:48:44.4410618Z Cleaning up orphan processes
+2026-11-26T00:48:44.4788873Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
