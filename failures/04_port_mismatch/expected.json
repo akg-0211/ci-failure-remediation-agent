@@ -1,0 +1,5 @@
+{
+  "category": "port_mismatch",
+  "root_cause": "sample_app/Dockerfile starts uvicorn on port 8080, but CI and the Docker port mapping use 8000. The container runs fine with no errors, but the smoke test on port 8000 fails because nothing listens there.",
+  "fix": "In sample_app/Dockerfile, change '--port 8080' in the CMD line to '--port 8000'"
+}

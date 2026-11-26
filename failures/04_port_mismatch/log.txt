@@ -1,0 +1,272 @@
+2026-11-26T00:22:10.5848939Z Current runner version: '2.338.2'
+2026-11-26T00:22:10.5884437Z ##[group]Runner Image Provisioner
+2026-11-26T00:22:10.5885658Z Hosted Compute Agent
+2026-11-26T00:22:10.5886603Z Version: 20261111.635
+2026-11-26T00:22:10.5887662Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-26T00:22:10.5888931Z Build Date: 2026-11-11T01:49:01Z
+2026-11-26T00:22:10.5890028Z Worker ID: {8b453723-b685-46de-986c-52d2467e2f4e}
+2026-11-26T00:22:10.5891176Z Region: northcentralus
+2026-11-26T00:22:10.5892266Z Cloud: Azure
+2026-11-26T00:22:10.5893117Z ##[endgroup]
+2026-11-26T00:22:10.5895545Z ##[group]Operating System
+2026-11-26T00:22:10.5896557Z Ubuntu
+2026-11-26T00:22:10.5897350Z 26.04.1
+2026-11-26T00:22:10.5898342Z LTS
+2026-11-26T00:22:10.5899121Z ##[endgroup]
+2026-11-26T00:22:10.5900101Z ##[group]Runner Image
+2026-11-26T00:22:10.5901050Z Image: ubuntu-26.04
+2026-11-26T00:22:10.5901927Z Version: 20261116.202.1
+2026-11-26T00:22:10.5904333Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-26T00:22:10.5906976Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+2026-11-26T00:22:10.5908661Z ##[endgroup]
+2026-11-26T00:22:10.5910722Z ##[group]GITHUB_TOKEN Permissions
+2026-11-26T00:22:10.5913872Z Contents: read
+2026-11-26T00:22:10.5914788Z Metadata: read
+2026-11-26T00:22:10.5916329Z Packages: read
+2026-11-26T00:22:10.5917204Z ##[endgroup]
+2026-11-26T00:22:10.5920133Z Secret source: Actions
+2026-11-26T00:22:10.5921551Z Cache mode: write
+2026-11-26T00:22:10.5923221Z Prepare workflow directory
+2026-11-26T00:22:10.6350648Z Prepare all required actions
+2026-11-26T00:22:10.6421968Z Getting action download info
+2026-11-26T00:22:10.8569612Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-26T00:22:11.0350416Z Complete job name: build
+2026-11-26T00:22:11.1359991Z ##[group]Run actions/checkout@v4
+2026-11-26T00:22:11.1360996Z with:
+2026-11-26T00:22:11.1361534Z   repository: akg-0211/ci-failure-remediation-agent
+2026-11-26T00:22:11.1366223Z   token: ***
+2026-11-26T00:22:11.1366686Z   ssh-strict: true
+2026-11-26T00:22:11.1367154Z   ssh-user: git
+2026-11-26T00:22:11.1367619Z   persist-credentials: true
+2026-11-26T00:22:11.1368126Z   clean: true
+2026-11-26T00:22:11.1368588Z   sparse-checkout-cone-mode: true
+2026-11-26T00:22:11.1369122Z   fetch-depth: 1
+2026-11-26T00:22:11.1369568Z   fetch-tags: false
+2026-11-26T00:22:11.1370034Z   show-progress: true
+2026-11-26T00:22:11.1370499Z   lfs: false
+2026-11-26T00:22:11.1370927Z   submodules: false
+2026-11-26T00:22:11.1371411Z   set-safe-directory: true
+2026-11-26T00:22:11.1371930Z   allow-unsafe-pr-checkout: false
+2026-11-26T00:22:11.1372688Z ##[endgroup]
+2026-11-26T00:22:11.4072596Z Syncing repository: akg-0211/ci-failure-remediation-agent
+2026-11-26T00:22:11.4076418Z ##[group]Getting Git version info
+2026-11-26T00:22:11.4078398Z Working directory is '/home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent'
+2026-11-26T00:22:11.4081021Z [command]/usr/bin/git version
+2026-11-26T00:22:11.4082043Z git version 2.56.1
+2026-11-26T00:22:11.4085460Z ##[endgroup]
+2026-11-26T00:22:11.4096530Z Temporarily overriding HOME='/home/runner/work/_temp/4df83c46-0c7c-437c-be37-612dcb4808a9' before making global git config changes
+2026-11-26T00:22:11.4099182Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-26T00:22:11.4103207Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent
+2026-11-26T00:22:11.4169349Z Deleting the contents of '/home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent'
+2026-11-26T00:22:11.4173065Z ##[group]Initializing the repository
+2026-11-26T00:22:11.4179501Z [command]/usr/bin/git init /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent
+2026-11-26T00:22:11.4274879Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-26T00:22:11.4277620Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-26T00:22:11.4279592Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-26T00:22:11.4281202Z hint: call:
+2026-11-26T00:22:11.4282512Z hint:
+2026-11-26T00:22:11.4283796Z hint: 	git config --global init.defaultBranch <name>
+2026-11-26T00:22:11.4284970Z hint:
+2026-11-26T00:22:11.4286046Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-26T00:22:11.4287794Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-26T00:22:11.4289286Z hint:
+2026-11-26T00:22:11.4290159Z hint: 	git branch -m <name>
+2026-11-26T00:22:11.4291195Z hint:
+2026-11-26T00:22:11.4292403Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-26T00:22:11.4295060Z Initialized empty Git repository in /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent/.git/
+2026-11-26T00:22:11.4302261Z [command]/usr/bin/git remote add origin https://github.com/akg-0211/ci-failure-remediation-agent
+2026-11-26T00:22:11.4363511Z ##[endgroup]
+2026-11-26T00:22:11.4365222Z ##[group]Disabling automatic garbage collection
+2026-11-26T00:22:11.4367992Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-26T00:22:11.4407998Z ##[endgroup]
+2026-11-26T00:22:11.4409391Z ##[group]Setting up auth
+2026-11-26T00:22:11.4416670Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-26T00:22:11.4458182Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-26T00:22:11.4975670Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-26T00:22:11.5016364Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-26T00:22:11.5316262Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-26T00:22:11.5357970Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-26T00:22:11.5671366Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-26T00:22:11.5716141Z ##[endgroup]
+2026-11-26T00:22:11.5717666Z ##[group]Fetching the repository
+2026-11-26T00:22:11.5728262Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0bea3726211a146b0e4370f05baa38e77fa17168:refs/remotes/origin/failure/04-port-mismatch
+2026-11-26T00:22:11.8255704Z From https://github.com/akg-0211/ci-failure-remediation-agent
+2026-11-26T00:22:11.8257069Z  * [new ref]         0bea3726211a146b0e4370f05baa38e77fa17168 -> origin/failure/04-port-mismatch
+2026-11-26T00:22:11.8260265Z ##[endgroup]
+2026-11-26T00:22:11.8261537Z ##[group]Determining the checkout info
+2026-11-26T00:22:11.8262957Z ##[endgroup]
+2026-11-26T00:22:11.8269477Z [command]/usr/bin/git sparse-checkout disable
+2026-11-26T00:22:11.8323125Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-26T00:22:11.8360326Z ##[group]Checking out the ref
+2026-11-26T00:22:11.8361645Z [command]/usr/bin/git checkout --progress --force -B failure/04-port-mismatch refs/remotes/origin/failure/04-port-mismatch
+2026-11-26T00:22:11.8440146Z Switched to a new branch 'failure/04-port-mismatch'
+2026-11-26T00:22:11.8446950Z branch 'failure/04-port-mismatch' set up to track 'origin/failure/04-port-mismatch'.
+2026-11-26T00:22:11.8451886Z ##[endgroup]
+2026-11-26T00:22:11.8498828Z [command]/usr/bin/git log -1 --format=%H
+2026-11-26T00:22:11.8526430Z 0bea3726211a146b0e4370f05baa38e77fa17168
+2026-11-26T00:22:11.8781018Z ##[group]Run docker build -t sample-app ./sample_app
+2026-11-26T00:22:11.8781950Z [36;1mdocker build -t sample-app ./sample_app[0m
+2026-11-26T00:22:11.8824640Z shell: /usr/bin/bash -e {0}
+2026-11-26T00:22:11.8825267Z ##[endgroup]
+2026-11-26T00:22:12.5047453Z #0 building with "default" instance using docker driver
+2026-11-26T00:22:12.5048222Z 
+2026-11-26T00:22:12.5048627Z #1 [internal] load build definition from Dockerfile
+2026-11-26T00:22:12.5049548Z #1 transferring dockerfile: 236B done
+2026-11-26T00:22:12.5050816Z #1 DONE 0.0s
+2026-11-26T00:22:12.5051229Z 
+2026-11-26T00:22:12.5051724Z #2 [auth] library/python:pull token for registry-1.docker.io
+2026-11-26T00:22:12.5052661Z #2 DONE 0.0s
+2026-11-26T00:22:12.5053117Z 
+2026-11-26T00:22:12.5053942Z #3 [internal] load metadata for docker.io/library/python:3.11-slim
+2026-11-26T00:22:12.7738782Z #3 DONE 0.5s
+2026-11-26T00:22:12.9258288Z 
+2026-11-26T00:22:12.9259691Z #4 [internal] load .dockerignore
+2026-11-26T00:22:12.9261593Z #4 transferring context: 62B done
+2026-11-26T00:22:12.9263141Z #4 DONE 0.0s
+2026-11-26T00:22:12.9263791Z 
+2026-11-26T00:22:12.9264382Z #5 [internal] load build context
+2026-11-26T00:22:12.9266068Z #5 transferring context: 573B done
+2026-11-26T00:22:12.9267505Z #5 DONE 0.0s
+2026-11-26T00:22:12.9268082Z 
+2026-11-26T00:22:12.9270098Z #6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+2026-11-26T00:22:12.9274649Z #6 resolve docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c 0.0s done
+2026-11-26T00:22:12.9278976Z #6 sha256:7cb68d39cd284bb0f746ee037b6c487e5cb431f600487f124bca7f6b433851ea 248B / 248B 0.0s done
+2026-11-26T00:22:12.9283010Z #6 sha256:ac4f3e55c8492b4403bd1889a560387dc9a1fadff3bfc48a7b085e0738a5fcb4 1.29MB / 1.29MB 0.1s done
+2026-11-26T00:22:13.0278521Z #6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 14.47MB / 14.47MB 0.1s done
+2026-11-26T00:22:13.0282764Z #6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 29.84MB / 29.84MB 0.2s done
+2026-11-26T00:22:13.0286916Z #6 extracting sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861
+2026-11-26T00:22:13.7354260Z #6 extracting sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 0.7s done
+2026-11-26T00:22:13.7355099Z #6 DONE 0.9s
+2026-11-26T00:22:13.9566228Z 
+2026-11-26T00:22:13.9567423Z #6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+2026-11-26T00:22:13.9568268Z #6 extracting sha256:ac4f3e55c8492b4403bd1889a560387dc9a1fadff3bfc48a7b085e0738a5fcb4 0.1s done
+2026-11-26T00:22:13.9568898Z #6 extracting sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808
+2026-11-26T00:22:14.2419499Z #6 extracting sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 0.4s done
+2026-11-26T00:22:14.2420538Z #6 DONE 1.4s
+2026-11-26T00:22:14.3718798Z 
+2026-11-26T00:22:14.3719861Z #6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+2026-11-26T00:22:14.3721371Z #6 extracting sha256:7cb68d39cd284bb0f746ee037b6c487e5cb431f600487f124bca7f6b433851ea done
+2026-11-26T00:22:14.3722050Z #6 DONE 1.5s
+2026-11-26T00:22:14.3722287Z 
+2026-11-26T00:22:14.3722430Z #7 [2/5] WORKDIR /app
+2026-11-26T00:22:14.3722742Z #7 DONE 0.1s
+2026-11-26T00:22:14.5371258Z 
+2026-11-26T00:22:14.5371868Z #8 [3/5] COPY requirements.txt .
+2026-11-26T00:22:14.5372287Z #8 DONE 0.0s
+2026-11-26T00:22:14.5372564Z 
+2026-11-26T00:22:14.5372782Z #9 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+2026-11-26T00:22:16.0170911Z #9 1.630 Collecting fastapi (from -r requirements.txt (line 1))
+2026-11-26T00:22:16.1385080Z #9 1.649   Downloading fastapi-0.165.0-py3-none-any.whl.metadata (27 kB)
+2026-11-26T00:22:16.1385844Z #9 1.687 Collecting uvicorn (from -r requirements.txt (line 2))
+2026-11-26T00:22:16.1387277Z #9 1.690   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+2026-11-26T00:22:16.1387878Z #9 1.752 Collecting starlette>=1.6.0 (from fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:16.3012789Z #9 1.755   Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+2026-11-26T00:22:16.3013828Z #9 1.782 Collecting anyio>=4.1.0 (from fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:16.3014606Z #9 1.786   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+2026-11-26T00:22:16.3015348Z #9 1.915 Collecting pydantic>=2.9.0 (from fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:16.4343408Z #9 1.918   Downloading pydantic-2.14.4-py3-none-any.whl.metadata (143 kB)
+2026-11-26T00:22:16.4344875Z #9 1.923      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.0/144.0 kB 48.6 MB/s eta 0:00:00
+2026-11-26T00:22:16.4345762Z #9 1.958 Collecting typing-extensions>=4.8.0 (from fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:16.4346620Z #9 1.961   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-11-26T00:22:16.4347562Z #9 1.976 Collecting typing-inspection>=0.4.2 (from fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:16.4348492Z #9 1.981   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+2026-11-26T00:22:16.4349397Z #9 1.993 Collecting annotated-doc>=0.0.2 (from fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:16.4350219Z #9 1.996   Downloading annotated_doc-0.0.7-py3-none-any.whl.metadata (6.4 kB)
+2026-11-26T00:22:16.4351062Z #9 2.048 Collecting opentelemetry-api>=1.44.0 (from fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:16.5378625Z #9 2.051   Downloading opentelemetry_api-1.45.2-py3-none-any.whl.metadata (1.4 kB)
+2026-11-26T00:22:16.5379329Z #9 2.081 Collecting click>=7.0 (from uvicorn->-r requirements.txt (line 2))
+2026-11-26T00:22:16.5379865Z #9 2.084   Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+2026-11-26T00:22:16.5380371Z #9 2.097 Collecting h11>=0.8 (from uvicorn->-r requirements.txt (line 2))
+2026-11-26T00:22:16.5381052Z #9 2.100   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2026-11-26T00:22:16.5381731Z #9 2.122 Collecting idna>=2.8 (from anyio>=4.1.0->fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:16.5382434Z #9 2.125   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+2026-11-26T00:22:16.5383206Z #9 2.151 Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:16.6925384Z #9 2.155   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+2026-11-26T00:22:17.3462608Z #9 2.960 Collecting pydantic-core==2.50.5 (from pydantic>=2.9.0->fastapi->-r requirements.txt (line 1))
+2026-11-26T00:22:17.4472755Z #9 2.963   Downloading pydantic_core-2.50.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+2026-11-26T00:22:17.4473961Z #9 2.999 Downloading fastapi-0.165.0-py3-none-any.whl (159 kB)
+2026-11-26T00:22:17.4475029Z #9 3.002    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 159.5/159.5 kB 278.8 MB/s eta 0:00:00
+2026-11-26T00:22:17.4475774Z #9 3.005 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+2026-11-26T00:22:17.4476602Z #9 3.007    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.4/87.4 kB 334.1 MB/s eta 0:00:00
+2026-11-26T00:22:17.4477326Z #9 3.010 Downloading annotated_doc-0.0.7-py3-none-any.whl (5.3 kB)
+2026-11-26T00:22:17.4478015Z #9 3.013 Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+2026-11-26T00:22:17.4478834Z #9 3.015    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.5/134.5 kB 361.5 MB/s eta 0:00:00
+2026-11-26T00:22:17.4479499Z #9 3.018 Downloading click-8.5.1-py3-none-any.whl (126 kB)
+2026-11-26T00:22:17.4480268Z #9 3.020    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.2/126.2 kB 358.9 MB/s eta 0:00:00
+2026-11-26T00:22:17.4480926Z #9 3.024 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2026-11-26T00:22:17.4481607Z #9 3.028 Downloading opentelemetry_api-1.45.2-py3-none-any.whl (60 kB)
+2026-11-26T00:22:17.4482398Z #9 3.030    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.3/60.3 kB 266.9 MB/s eta 0:00:00
+2026-11-26T00:22:17.4483399Z #9 3.033 Downloading pydantic-2.14.4-py3-none-any.whl (494 kB)
+2026-11-26T00:22:17.4484528Z #9 3.037    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 494.9/494.9 kB 225.1 MB/s eta 0:00:00
+2026-11-26T00:22:17.4485742Z #9 3.041 Downloading pydantic_core-2.50.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+2026-11-26T00:22:17.4486821Z #9 3.050    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 318.3 MB/s eta 0:00:00
+2026-11-26T00:22:17.4487510Z #9 3.054 Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+2026-11-26T00:22:17.4488322Z #9 3.055    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.6/80.6 kB 302.4 MB/s eta 0:00:00
+2026-11-26T00:22:17.4489136Z #9 3.061 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-11-26T00:22:17.5599219Z #9 3.063    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 216.1 MB/s eta 0:00:00
+2026-11-26T00:22:17.5599783Z #9 3.066 Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+2026-11-26T00:22:17.5600279Z #9 3.069 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+2026-11-26T00:22:17.5600690Z #9 3.072 Downloading idna-3.20-py3-none-any.whl (69 kB)
+2026-11-26T00:22:18.3799494Z #9 3.074    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 327.8 MB/s eta 0:00:00
+2026-11-26T00:22:18.3800486Z #9 3.173 Installing collected packages: typing-extensions, idna, h11, click, annotated-types, annotated-doc, uvicorn, typing-inspection, pydantic-core, opentelemetry-api, anyio, starlette, pydantic, fastapi
+2026-11-26T00:22:18.3802084Z #9 3.993 Successfully installed annotated-doc-0.0.7 annotated-types-0.8.0 anyio-4.16.0 click-8.5.1 fastapi-0.165.0 h11-0.16.0 idna-3.20 opentelemetry-api-1.45.2 pydantic-2.14.4 pydantic-core-2.50.5 starlette-1.10.0 typing-extensions-4.16.0 typing-inspection-0.4.5 uvicorn-0.54.0
+2026-11-26T00:22:18.5953893Z #9 3.993 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2026-11-26T00:22:18.5955419Z #9 4.058 
+2026-11-26T00:22:18.5955843Z #9 4.058 [notice] A new release of pip is available: 24.0 -> 26.3
+2026-11-26T00:22:18.5956330Z #9 4.058 [notice] To update, run: pip install --upgrade pip
+2026-11-26T00:22:18.7232375Z #9 DONE 4.3s
+2026-11-26T00:22:18.9152063Z 
+2026-11-26T00:22:18.9152479Z #10 [5/5] COPY . .
+2026-11-26T00:22:18.9152758Z #10 DONE 0.0s
+2026-11-26T00:22:18.9152900Z 
+2026-11-26T00:22:18.9152998Z #11 exporting to image
+2026-11-26T00:22:18.9153253Z #11 exporting layers
+2026-11-26T00:22:19.8949684Z #11 exporting layers 1.1s done
+2026-11-26T00:22:20.0658319Z #11 exporting manifest sha256:11f45d287d8b43ec2cc0cbe3151a537b430dbf263d55aa7f30d1e88612793e43 done
+2026-11-26T00:22:20.0659530Z #11 exporting config sha256:814ae288e738a8fbd92f6946e6b2cff61390d2bf5fa21ce20f65111b1293bb6f done
+2026-11-26T00:22:20.2398196Z #11 exporting attestation manifest sha256:367eb3703d9f0a69c290a51dd5a304370eb1d8a5cd8b3b39947fc36b91759d7d done
+2026-11-26T00:22:20.2399645Z #11 exporting manifest list sha256:beff56f56a60a78fc816acecf1823db4e084195047eddf001e0de91e52daa0ba done
+2026-11-26T00:22:20.2400393Z #11 naming to docker.io/library/sample-app:latest done
+2026-11-26T00:22:20.2400948Z #11 unpacking to docker.io/library/sample-app:latest
+2026-11-26T00:22:20.2401603Z #11 unpacking to docker.io/library/sample-app:latest 0.3s done
+2026-11-26T00:22:20.2967778Z #11 DONE 1.5s
+2026-11-26T00:22:20.3081999Z ##[group]Run docker run -d -p 8000:8000 --name app sample-app
+2026-11-26T00:22:20.3082514Z [36;1mdocker run -d -p 8000:8000 --name app sample-app[0m
+2026-11-26T00:22:20.3120911Z shell: /usr/bin/bash -e {0}
+2026-11-26T00:22:20.3121192Z ##[endgroup]
+2026-11-26T00:22:20.4003665Z 20be5014fd5195ea7120bef2f4ef26ebc66a4763644977970b2ec7394ac0f82c
+2026-11-26T00:22:20.5966727Z ##[group]Run sleep 5
+2026-11-26T00:22:20.5967014Z [36;1msleep 5[0m
+2026-11-26T00:22:20.5967318Z [36;1mcurl --fail http://localhost:8000/[0m
+2026-11-26T00:22:20.6002470Z shell: /usr/bin/bash -e {0}
+2026-11-26T00:22:20.6002749Z ##[endgroup]
+2026-11-26T00:22:25.6197111Z   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+2026-11-26T00:22:25.6198563Z                                  Dload  Upload  Total   Spent   Left   Speed
+2026-11-26T00:22:25.6202037Z 
+2026-11-26T00:22:25.6210292Z   0      0   0      0   0      0      0      0                              0
+2026-11-26T00:22:25.6211032Z curl: (56) Recv failure: Connection reset by peer
+2026-11-26T00:22:25.6239163Z ##[error]Process completed with exit code 56.
+2026-11-26T00:22:25.6313044Z ##[group]Run docker logs app
+2026-11-26T00:22:25.6313729Z [36;1mdocker logs app[0m
+2026-11-26T00:22:25.6361159Z shell: /usr/bin/bash -e {0}
+2026-11-26T00:22:25.6361442Z ##[endgroup]
+2026-11-26T00:22:25.6570391Z INFO:     Started server process [1]
+2026-11-26T00:22:25.6570752Z INFO:     Waiting for application startup.
+2026-11-26T00:22:25.6571088Z INFO:     Application startup complete.
+2026-11-26T00:22:25.6571544Z INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2026-11-26T00:22:25.6705530Z Post job cleanup.
+2026-11-26T00:22:25.7641194Z [command]/usr/bin/git version
+2026-11-26T00:22:25.7694740Z git version 2.56.1
+2026-11-26T00:22:25.7737085Z Temporarily overriding HOME='/home/runner/work/_temp/a2f0d88a-65fd-406f-899c-9ff33c521cf2' before making global git config changes
+2026-11-26T00:22:25.7738390Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-26T00:22:25.7743267Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent
+2026-11-26T00:22:25.7790198Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-26T00:22:25.7832253Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-26T00:22:25.8167212Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-26T00:22:25.8199897Z http.https://github.com/.extraheader
+2026-11-26T00:22:25.8212044Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-26T00:22:25.8255713Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-26T00:22:25.8608524Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-26T00:22:25.8643799Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-26T00:22:25.9087682Z Cleaning up orphan processes
+2026-11-26T00:22:25.9512669Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
