@@ -1,0 +1,5 @@
+{
+  "category": "dependency_version_error",
+  "root_cause": "sample_app/requirements.txt pins 'fastapi==99.0.0', a version that does not exist on PyPI. The 'pip install' step in the Dockerfile fails with 'No matching distribution found', so the build stops and no image or container is created.",
+  "fix": "In sample_app/requirements.txt, change 'fastapi==99.0.0' to 'fastapi' (or to a real released version)."
+}

@@ -1,0 +1,203 @@
+2026-11-27T21:45:14.2823170Z Current runner version: '2.338.2'
+2026-11-27T21:45:14.2860530Z ##[group]Runner Image Provisioner
+2026-11-27T21:45:14.2862252Z Hosted Compute Agent
+2026-11-27T21:45:14.2863302Z Version: 20261111.635
+2026-11-27T21:45:14.2864454Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-27T21:45:14.2865655Z Build Date: 2026-11-11T01:49:01Z
+2026-11-27T21:45:14.2866869Z Worker ID: {148b2ef2-0364-4f72-92e7-62e32101147a}
+2026-11-27T21:45:14.2868131Z Region: eastus
+2026-11-27T21:45:14.2869053Z Cloud: Azure
+2026-11-27T21:45:14.2870104Z ##[endgroup]
+2026-11-27T21:45:14.2873017Z ##[group]Operating System
+2026-11-27T21:45:14.2874217Z Ubuntu
+2026-11-27T21:45:14.2875178Z 26.04.1
+2026-11-27T21:45:14.2876248Z LTS
+2026-11-27T21:45:14.2877210Z ##[endgroup]
+2026-11-27T21:45:14.2878327Z ##[group]Runner Image
+2026-11-27T21:45:14.2879485Z Image: ubuntu-26.04
+2026-11-27T21:45:14.2880467Z Version: 20261122.9.1
+2026-11-27T21:45:14.2883099Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261122.9/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-27T21:45:14.2886048Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261122.9
+2026-11-27T21:45:14.2887897Z ##[endgroup]
+2026-11-27T21:45:14.2890342Z ##[group]GITHUB_TOKEN Permissions
+2026-11-27T21:45:14.2893477Z Contents: read
+2026-11-27T21:45:14.2894592Z Metadata: read
+2026-11-27T21:45:14.2895643Z Packages: read
+2026-11-27T21:45:14.2896629Z ##[endgroup]
+2026-11-27T21:45:14.2899906Z Secret source: Actions
+2026-11-27T21:45:14.2901819Z Cache mode: write
+2026-11-27T21:45:14.2903314Z Prepare workflow directory
+2026-11-27T21:45:14.3408065Z Prepare all required actions
+2026-11-27T21:45:14.3480478Z Getting action download info
+2026-11-27T21:45:14.5023845Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-27T21:45:14.6838351Z Complete job name: build
+2026-11-27T21:45:14.7888385Z ##[group]Run actions/checkout@v4
+2026-11-27T21:45:14.7889510Z with:
+2026-11-27T21:45:14.7890051Z   repository: akg-0211/ci-failure-remediation-agent
+2026-11-27T21:45:14.7894177Z   token: ***
+2026-11-27T21:45:14.7894653Z   ssh-strict: true
+2026-11-27T21:45:14.7895109Z   ssh-user: git
+2026-11-27T21:45:14.7895575Z   persist-credentials: true
+2026-11-27T21:45:14.7896075Z   clean: true
+2026-11-27T21:45:14.7896540Z   sparse-checkout-cone-mode: true
+2026-11-27T21:45:14.7897073Z   fetch-depth: 1
+2026-11-27T21:45:14.7897519Z   fetch-tags: false
+2026-11-27T21:45:14.7897999Z   show-progress: true
+2026-11-27T21:45:14.7898463Z   lfs: false
+2026-11-27T21:45:14.7898942Z   submodules: false
+2026-11-27T21:45:14.7899408Z   set-safe-directory: true
+2026-11-27T21:45:14.7899928Z   allow-unsafe-pr-checkout: false
+2026-11-27T21:45:14.7900772Z ##[endgroup]
+2026-11-27T21:45:15.0636032Z Syncing repository: akg-0211/ci-failure-remediation-agent
+2026-11-27T21:45:15.0640455Z ##[group]Getting Git version info
+2026-11-27T21:45:15.0643472Z Working directory is '/home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent'
+2026-11-27T21:45:15.0647065Z [command]/usr/bin/git version
+2026-11-27T21:45:15.0648950Z git version 2.56.1
+2026-11-27T21:45:15.0672631Z ##[endgroup]
+2026-11-27T21:45:15.0691130Z Temporarily overriding HOME='/home/runner/work/_temp/06116890-fbc2-4453-a820-76c401d52620' before making global git config changes
+2026-11-27T21:45:15.0695916Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T21:45:15.0700521Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent
+2026-11-27T21:45:15.0765584Z Deleting the contents of '/home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent'
+2026-11-27T21:45:15.0776763Z ##[group]Initializing the repository
+2026-11-27T21:45:15.0783125Z [command]/usr/bin/git init /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent
+2026-11-27T21:45:15.0898919Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-27T21:45:15.0903784Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-27T21:45:15.0907698Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-27T21:45:15.0911744Z hint: call:
+2026-11-27T21:45:15.0913772Z hint:
+2026-11-27T21:45:15.0916000Z hint: 	git config --global init.defaultBranch <name>
+2026-11-27T21:45:15.0918692Z hint:
+2026-11-27T21:45:15.0922121Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-27T21:45:15.0925815Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-27T21:45:15.0929119Z hint:
+2026-11-27T21:45:15.0930798Z hint: 	git branch -m <name>
+2026-11-27T21:45:15.0932835Z hint:
+2026-11-27T21:45:15.0935249Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-27T21:45:15.0940593Z Initialized empty Git repository in /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent/.git/
+2026-11-27T21:45:15.0949248Z [command]/usr/bin/git remote add origin https://github.com/akg-0211/ci-failure-remediation-agent
+2026-11-27T21:45:15.0976873Z ##[endgroup]
+2026-11-27T21:45:15.0979937Z ##[group]Disabling automatic garbage collection
+2026-11-27T21:45:15.0982864Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-27T21:45:15.1017920Z ##[endgroup]
+2026-11-27T21:45:15.1020541Z ##[group]Setting up auth
+2026-11-27T21:45:15.1024540Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T21:45:15.1067788Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T21:45:15.1587496Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T21:45:15.1636217Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T21:45:15.1950485Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T21:45:15.1987522Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T21:45:15.2262703Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-27T21:45:15.2302764Z ##[endgroup]
+2026-11-27T21:45:15.2304443Z ##[group]Fetching the repository
+2026-11-27T21:45:15.2318734Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +88b96cf3e4d20f7b3d838d78589ba8189b65fac7:refs/remotes/origin/failure/07-bad-dependency-version
+2026-11-27T21:45:15.4306294Z From https://github.com/akg-0211/ci-failure-remediation-agent
+2026-11-27T21:45:15.4309765Z  * [new ref]         88b96cf3e4d20f7b3d838d78589ba8189b65fac7 -> origin/failure/07-bad-dependency-version
+2026-11-27T21:45:15.4315874Z ##[endgroup]
+2026-11-27T21:45:15.4317935Z ##[group]Determining the checkout info
+2026-11-27T21:45:15.4320385Z ##[endgroup]
+2026-11-27T21:45:15.4322100Z [command]/usr/bin/git sparse-checkout disable
+2026-11-27T21:45:15.4387956Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-27T21:45:15.4422705Z ##[group]Checking out the ref
+2026-11-27T21:45:15.4428848Z [command]/usr/bin/git checkout --progress --force -B failure/07-bad-dependency-version refs/remotes/origin/failure/07-bad-dependency-version
+2026-11-27T21:45:15.4520235Z Switched to a new branch 'failure/07-bad-dependency-version'
+2026-11-27T21:45:15.4527339Z branch 'failure/07-bad-dependency-version' set up to track 'origin/failure/07-bad-dependency-version'.
+2026-11-27T21:45:15.4534517Z ##[endgroup]
+2026-11-27T21:45:15.4581349Z [command]/usr/bin/git log -1 --format=%H
+2026-11-27T21:45:15.4607391Z 88b96cf3e4d20f7b3d838d78589ba8189b65fac7
+2026-11-27T21:45:15.4894220Z ##[group]Run docker build -t sample-app ./sample_app
+2026-11-27T21:45:15.4896931Z [36;1mdocker build -t sample-app ./sample_app[0m
+2026-11-27T21:45:15.4936600Z shell: /usr/bin/bash -e {0}
+2026-11-27T21:45:15.4937647Z ##[endgroup]
+2026-11-27T21:45:16.1157862Z #0 building with "default" instance using docker driver
+2026-11-27T21:45:16.1158700Z 
+2026-11-27T21:45:16.1159071Z #1 [internal] load build definition from Dockerfile
+2026-11-27T21:45:16.1159952Z #1 transferring dockerfile: 236B done
+2026-11-27T21:45:16.1160663Z #1 DONE 0.0s
+2026-11-27T21:45:16.1160987Z 
+2026-11-27T21:45:16.1161690Z #2 [auth] library/python:pull token for registry-1.docker.io
+2026-11-27T21:45:16.1162576Z #2 DONE 0.0s
+2026-11-27T21:45:16.2572666Z 
+2026-11-27T21:45:16.2573609Z #3 [internal] load metadata for docker.io/library/python:3.11-slim
+2026-11-27T21:45:16.2574409Z #3 DONE 0.3s
+2026-11-27T21:45:16.3853223Z 
+2026-11-27T21:45:16.3854000Z #4 [internal] load .dockerignore
+2026-11-27T21:45:16.3855539Z #4 transferring context: 62B done
+2026-11-27T21:45:16.3856234Z #4 DONE 0.0s
+2026-11-27T21:45:16.3856613Z 
+2026-11-27T21:45:16.3856912Z #5 [internal] load build context
+2026-11-27T21:45:16.3857611Z #5 transferring context: 581B done
+2026-11-27T21:45:16.3858277Z #5 DONE 0.0s
+2026-11-27T21:45:16.3858679Z 
+2026-11-27T21:45:16.3859513Z #6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+2026-11-27T21:45:16.3861131Z #6 resolve docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c 0.0s done
+2026-11-27T21:45:16.3863099Z #6 sha256:7cb68d39cd284bb0f746ee037b6c487e5cb431f600487f124bca7f6b433851ea 248B / 248B 0.0s done
+2026-11-27T21:45:16.3864616Z #6 sha256:ac4f3e55c8492b4403bd1889a560387dc9a1fadff3bfc48a7b085e0738a5fcb4 1.29MB / 1.29MB 0.1s done
+2026-11-27T21:45:16.4964790Z #6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 14.47MB / 14.47MB 0.1s done
+2026-11-27T21:45:16.4966969Z #6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 29.84MB / 29.84MB 0.2s done
+2026-11-27T21:45:16.6496339Z #6 extracting sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861
+2026-11-27T21:45:17.1824404Z #6 extracting sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 0.7s done
+2026-11-27T21:45:17.1825474Z #6 DONE 0.9s
+2026-11-27T21:45:17.4033608Z 
+2026-11-27T21:45:17.4034526Z #6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+2026-11-27T21:45:17.4035892Z #6 extracting sha256:ac4f3e55c8492b4403bd1889a560387dc9a1fadff3bfc48a7b085e0738a5fcb4 0.1s done
+2026-11-27T21:45:17.4037038Z #6 extracting sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808
+2026-11-27T21:45:17.6888637Z #6 extracting sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 0.4s done
+2026-11-27T21:45:17.6889457Z #6 DONE 1.4s
+2026-11-27T21:45:17.8274222Z 
+2026-11-27T21:45:17.8276418Z #6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+2026-11-27T21:45:17.8277835Z #6 extracting sha256:7cb68d39cd284bb0f746ee037b6c487e5cb431f600487f124bca7f6b433851ea done
+2026-11-27T21:45:17.8279074Z #6 DONE 1.4s
+2026-11-27T21:45:17.8279553Z 
+2026-11-27T21:45:17.8279978Z #7 [2/5] WORKDIR /app
+2026-11-27T21:45:17.8280675Z #7 DONE 0.1s
+2026-11-27T21:45:17.9929326Z 
+2026-11-27T21:45:17.9930212Z #8 [3/5] COPY requirements.txt .
+2026-11-27T21:45:17.9930734Z #8 DONE 0.0s
+2026-11-27T21:45:17.9930890Z 
+2026-11-27T21:45:17.9931112Z #9 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+2026-11-27T21:45:19.4706152Z #9 1.626 ERROR: Could not find a version that satisfies the requirement fastapi==99.0.0 (from versions: 0.1.0, 0.1.2, 0.1.3, 0.1.4, 0.1.5, 0.1.6, 0.1.7, 0.1.8, 0.1.9, 0.1.10, 0.1.11, 0.1.12, 0.1.13, 0.1.14, 0.1.15, 0.1.16, 0.1.17, 0.1.18, 0.1.19, 0.2.0, 0.2.1, 0.3.0, 0.4.0, 0.5.0, 0.5.1, 0.6.0, 0.6.1, 0.6.2, 0.6.3, 0.6.4, 0.7.0, 0.7.1, 0.8.0, 0.9.0, 0.9.1, 0.10.0, 0.10.1, 0.10.2, 0.11.0, 0.12.0, 0.12.1, 0.13.0, 0.14.0, 0.15.0, 0.16.0, 0.17.0, 0.18.0, 0.19.0, 0.20.0, 0.20.1, 0.21.0, 0.22.0, 0.23.0, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.27.1, 0.27.2, 0.28.0, 0.29.0, 0.29.1, 0.30.0, 0.30.1, 0.31.0, 0.32.0, 0.33.0, 0.34.0, 0.35.0, 0.36.0, 0.37.0, 0.38.0, 0.38.1, 0.39.0, 0.40.0, 0.41.0, 0.42.0, 0.43.0, 0.44.0, 0.44.1, 0.45.0, 0.46.0, 0.47.0, 0.47.1, 0.48.0, 0.49.0, 0.49.1, 0.49.2, 0.50.0, 0.51.0, 0.52.0, 0.53.0, 0.53.1, 0.53.2, 0.54.0, 0.54.1, 0.54.2, 0.55.0, 0.55.1, 0.56.0, 0.56.1, 0.57.0, 0.58.0, 0.58.1, 0.59.0, 0.60.0, 0.60.1, 0.60.2, 0.61.0, 0.61.1, 0.61.2, 0.62.0, 0.63.0, 0.64.0, 0.65.0, 0.65.1, 0.65.2, 0.65.3, 0.66.0, 0.66.1, 0.67.0, 0.68.0, 0.68.1, 0.68.2, 0.69.0, 0.70.0, 0.70.1, 0.71.0, 0.72.0, 0.73.0, 0.74.0, 0.74.1, 0.75.0, 0.75.1, 0.75.2, 0.76.0, 0.77.0, 0.77.1, 0.78.0, 0.79.0, 0.79.1, 0.80.0, 0.81.0, 0.82.0, 0.83.0, 0.84.0, 0.85.0, 0.85.1, 0.85.2, 0.86.0, 0.87.0, 0.88.0, 0.89.0, 0.89.1, 0.90.0, 0.90.1, 0.91.0, 0.92.0, 0.93.0, 0.94.0, 0.94.1, 0.95.0, 0.95.1, 0.95.2, 0.96.0, 0.96.1, 0.97.0, 0.98.0, 0.99.0, 0.99.1, 0.100.0b1, 0.100.0b2, 0.100.0b3, 0.100.0, 0.100.1, 0.101.0, 0.101.1, 0.102.0, 0.103.0, 0.103.1, 0.103.2, 0.104.0, 0.104.1, 0.105.0, 0.106.0, 0.107.0, 0.108.0, 0.109.0, 0.109.1, 0.109.2, 0.110.0, 0.110.1, 0.110.2, 0.110.3.dev1, 0.110.3.dev2, 0.110.3, 0.111.0.dev1, 0.111.0, 0.111.1, 0.112.0, 0.112.1, 0.112.2, 0.112.3, 0.112.4, 0.113.0, 0.114.0, 0.114.1, 0.114.2, 0.115.0, 0.115.1, 0.115.2, 0.115.3, 0.115.4, 0.115.5, 0.115.6, 0.115.7, 0.115.8, 0.115.9, 0.115.10, 0.115.11, 0.115.12, 0.115.13, 0.115.14, 0.116.0, 0.116.1, 0.116.2, 0.117.0, 0.117.1, 0.118.0, 0.118.1, 0.118.2, 0.118.3, 0.119.0, 0.119.1, 0.120.0, 0.120.1, 0.120.2, 0.120.3, 0.120.4, 0.121.0, 0.121.1, 0.121.2, 0.121.3, 0.122.0, 0.122.1, 0.123.0, 0.123.1, 0.123.2, 0.123.3, 0.123.4, 0.123.5, 0.123.6, 0.123.7, 0.123.8, 0.123.9, 0.123.10, 0.124.0, 0.124.1, 0.124.2, 0.124.3, 0.124.4, 0.125.0, 0.126.0, 0.127.0, 0.127.1, 0.128.0, 0.128.1, 0.128.2, 0.128.3, 0.128.4, 0.128.5, 0.128.6, 0.128.7, 0.128.8, 0.129.0, 0.129.1, 0.129.2, 0.130.0, 0.131.0, 0.132.0, 0.132.1, 0.133.0, 0.133.1, 0.134.0, 0.135.0, 0.135.1, 0.135.2, 0.135.3, 0.135.4, 0.136.0, 0.136.1, 0.136.3, 0.137.0, 0.137.1, 0.137.2, 0.138.0, 0.138.1, 0.138.2, 0.139.0, 0.139.1, 0.139.2, 0.140.0, 0.140.1, 0.140.2, 0.140.3, 0.140.4, 0.140.5, 0.140.6, 0.140.7, 0.140.8, 0.140.9, 0.140.10, 0.140.11, 0.140.12, 0.140.13, 0.141.0, 0.141.1, 0.142.0, 0.142.1, 0.142.2, 0.142.3, 0.142.4, 0.143.0, 0.143.1, 0.143.2, 0.143.3, 0.143.4, 0.143.5, 0.144.0, 0.145.0, 0.146.0, 0.147.0, 0.148.0, 0.149.0, 0.150.0, 0.151.0, 0.152.0, 0.153.0, 0.154.0, 0.155.0, 0.156.0, 0.156.1, 0.156.2, 0.156.3, 0.156.4, 0.156.5, 0.156.6, 0.156.7, 0.156.8, 0.157.0, 0.158.0, 0.158.1, 0.158.2, 0.159.0, 0.159.1, 0.160.0, 0.161.0, 0.161.1, 0.162.0, 0.162.1, 0.162.2, 0.162.3, 0.162.4, 0.162.5, 0.162.6, 0.162.7, 0.163.0, 0.163.1, 0.163.2, 0.164.0, 0.165.0)
+2026-11-27T21:45:19.5858981Z #9 1.626 ERROR: No matching distribution found for fastapi==99.0.0
+2026-11-27T21:45:19.5859791Z #9 1.743 
+2026-11-27T21:45:19.5860230Z #9 1.743 [notice] A new release of pip is available: 24.0 -> 26.3
+2026-11-27T21:45:19.5861099Z #9 1.743 [notice] To update, run: pip install --upgrade pip
+2026-11-27T21:45:19.7606044Z #9 ERROR: process "/bin/sh -c pip install --no-cache-dir -r requirements.txt" did not complete successfully: exit code: 1
+2026-11-27T21:45:19.7781323Z ------
+2026-11-27T21:45:19.7782239Z  > [4/5] RUN pip install --no-cache-dir -r requirements.txt:
+2026-11-27T21:45:19.7792793Z 1.626 ERROR: Could not find a version that satisfies the requirement fastapi==99.0.0 (from versions: 0.1.0, 0.1.2, 0.1.3, 0.1.4, 0.1.5, 0.1.6, 0.1.7, 0.1.8, 0.1.9, 0.1.10, 0.1.11, 0.1.12, 0.1.13, 0.1.14, 0.1.15, 0.1.16, 0.1.17, 0.1.18, 0.1.19, 0.2.0, 0.2.1, 0.3.0, 0.4.0, 0.5.0, 0.5.1, 0.6.0, 0.6.1, 0.6.2, 0.6.3, 0.6.4, 0.7.0, 0.7.1, 0.8.0, 0.9.0, 0.9.1, 0.10.0, 0.10.1, 0.10.2, 0.11.0, 0.12.0, 0.12.1, 0.13.0, 0.14.0, 0.15.0, 0.16.0, 0.17.0, 0.18.0, 0.19.0, 0.20.0, 0.20.1, 0.21.0, 0.22.0, 0.23.0, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.27.1, 0.27.2, 0.28.0, 0.29.0, 0.29.1, 0.30.0, 0.30.1, 0.31.0, 0.32.0, 0.33.0, 0.34.0, 0.35.0, 0.36.0, 0.37.0, 0.38.0, 0.38.1, 0.39.0, 0.40.0, 0.41.0, 0.42.0, 0.43.0, 0.44.0, 0.44.1, 0.45.0, 0.46.0, 0.47.0, 0.47.1, 0.48.0, 0.49.0, 0.49.1, 0.49.2, 0.50.0, 0.51.0, 0.52.0, 0.53.0, 0.53.1, 0.53.2, 0.54.0, 0.54.1, 0.54.2, 0.55.0, 0.55.1, 0.56.0, 0.56.1, 0.57.0, 0.58.0, 0.58.1, 0.59.0, 0.60.0, 0.60.1, 0.60.2, 0.61.0, 0.61.1, 0.61.2, 0.62.0, 0.63.0, 0.64.0, 0.65.0, 0.65.1, 0.65.2, 0.65.3, 0.66.0, 0.66.1, 0.67.0, 0.68.0, 0.68.1, 0.68.2, 0.69.0, 0.70.0, 0.70.1, 0.71.0, 0.72.0, 0.73.0, 0.74.0, 0.74.1, 0.75.0, 0.75.1, 0.75.2, 0.76.0, 0.77.0, 0.77.1, 0.78.0, 0.79.0, 0.79.1, 0.80.0, 0.81.0, 0.82.0, 0.83.0, 0.84.0, 0.85.0, 0.85.1, 0.85.2, 0.86.0, 0.87.0, 0.88.0, 0.89.0, 0.89.1, 0.90.0, 0.90.1, 0.91.0, 0.92.0, 0.93.0, 0.94.0, 0.94.1, 0.95.0, 0.95.1, 0.95.2, 0.96.0, 0.96.1, 0.97.0, 0.98.0, 0.99.0, 0.99.1, 0.100.0b1, 0.100.0b2, 0.100.0b3, 0.100.0, 0.100.1, 0.101.0, 0.101.1, 0.102.0, 0.103.0, 0.103.1, 0.103.2, 0.104.0, 0.104.1, 0.105.0, 0.106.0, 0.107.0, 0.108.0, 0.109.0, 0.109.1, 0.109.2, 0.110.0, 0.110.1, 0.110.2, 0.110.3.dev1, 0.110.3.dev2, 0.110.3, 0.111.0.dev1, 0.111.0, 0.111.1, 0.112.0, 0.112.1, 0.112.2, 0.112.3, 0.112.4, 0.113.0, 0.114.0, 0.114.1, 0.114.2, 0.115.0, 0.115.1, 0.115.2, 0.115.3, 0.115.4, 0.115.5, 0.115.6, 0.115.7, 0.115.8, 0.115.9, 0.115.10, 0.115.11, 0.115.12, 0.115.13, 0.115.14, 0.116.0, 0.116.1, 0.116.2, 0.117.0, 0.117.1, 0.118.0, 0.118.1, 0.118.2, 0.118.3, 0.119.0, 0.119.1, 0.120.0, 0.120.1, 0.120.2, 0.120.3, 0.120.4, 0.121.0, 0.121.1, 0.121.2, 0.121.3, 0.122.0, 0.122.1, 0.123.0, 0.123.1, 0.123.2, 0.123.3, 0.123.4, 0.123.5, 0.123.6, 0.123.7, 0.123.8, 0.123.9, 0.123.10, 0.124.0, 0.124.1, 0.124.2, 0.124.3, 0.124.4, 0.125.0, 0.126.0, 0.127.0, 0.127.1, 0.128.0, 0.128.1, 0.128.2, 0.128.3, 0.128.4, 0.128.5, 0.128.6, 0.128.7, 0.128.8, 0.129.0, 0.129.1, 0.129.2, 0.130.0, 0.131.0, 0.132.0, 0.132.1, 0.133.0, 0.133.1, 0.134.0, 0.135.0, 0.135.1, 0.135.2, 0.135.3, 0.135.4, 0.136.0, 0.136.1, 0.136.3, 0.137.0, 0.137.1, 0.137.2, 0.138.0, 0.138.1, 0.138.2, 0.139.0, 0.139.1, 0.139.2, 0.140.0, 0.140.1, 0.140.2, 0.140.3, 0.140.4, 0.140.5, 0.140.6, 0.140.7, 0.140.8, 0.140.9, 0.140.10, 0.140.11, 0.140.12, 0.140.13, 0.141.0, 0.141.1, 0.142.0, 0.142.1, 0.142.2, 0.142.3, 0.142.4, 0.143.0, 0.143.1, 0.143.2, 0.143.3, 0.143.4, 0.143.5, 0.144.0, 0.145.0, 0.146.0, 0.147.0, 0.148.0, 0.149.0, 0.150.0, 0.151.0, 0.152.0, 0.153.0, 0.154.0, 0.155.0, 0.156.0, 0.156.1, 0.156.2, 0.156.3, 0.156.4, 0.156.5, 0.156.6, 0.156.7, 0.156.8, 0.157.0, 0.158.0, 0.158.1, 0.158.2, 0.159.0, 0.159.1, 0.160.0, 0.161.0, 0.161.1, 0.162.0, 0.162.1, 0.162.2, 0.162.3, 0.162.4, 0.162.5, 0.162.6, 0.162.7, 0.163.0, 0.163.1, 0.163.2, 0.164.0, 0.165.0)
+2026-11-27T21:45:19.7804958Z 1.626 ERROR: No matching distribution found for fastapi==99.0.0
+2026-11-27T21:45:19.7805567Z 1.743 
+2026-11-27T21:45:19.7806050Z 1.743 [notice] A new release of pip is available: 24.0 -> 26.3
+2026-11-27T21:45:19.7806768Z 1.743 [notice] To update, run: pip install --upgrade pip
+2026-11-27T21:45:19.7807314Z ------
+2026-11-27T21:45:19.7842181Z Dockerfile:4
+2026-11-27T21:45:19.7842630Z --------------------
+2026-11-27T21:45:19.7843032Z    2 |     WORKDIR /app
+2026-11-27T21:45:19.7843463Z    3 |     COPY requirements.txt .
+2026-11-27T21:45:19.7844054Z    4 | >>> RUN pip install --no-cache-dir -r requirements.txt
+2026-11-27T21:45:19.7844643Z    5 |     COPY . .
+2026-11-27T21:45:19.7845005Z    6 |     EXPOSE 8000
+2026-11-27T21:45:19.7845372Z --------------------
+2026-11-27T21:45:19.7846453Z ERROR: failed to build: failed to solve: process "/bin/sh -c pip install --no-cache-dir -r requirements.txt" did not complete successfully: exit code: 1
+2026-11-27T21:45:19.7920610Z ##[error]Process completed with exit code 1.
+2026-11-27T21:45:19.7992757Z ##[group]Run docker logs app
+2026-11-27T21:45:19.7993091Z [36;1mdocker logs app[0m
+2026-11-27T21:45:19.8027739Z shell: /usr/bin/bash -e {0}
+2026-11-27T21:45:19.8028023Z ##[endgroup]
+2026-11-27T21:45:19.8227133Z Error response from daemon: No such container: app
+2026-11-27T21:45:19.8245387Z ##[error]Process completed with exit code 1.
+2026-11-27T21:45:19.8451754Z Post job cleanup.
+2026-11-27T21:45:19.9501035Z [command]/usr/bin/git version
+2026-11-27T21:45:19.9548061Z git version 2.56.1
+2026-11-27T21:45:19.9589914Z Temporarily overriding HOME='/home/runner/work/_temp/708990af-5c09-44a6-96e0-2baf1892cf1e' before making global git config changes
+2026-11-27T21:45:19.9591315Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T21:45:19.9597131Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-failure-remediation-agent/ci-failure-remediation-agent
+2026-11-27T21:45:19.9649788Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T21:45:19.9689062Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T21:45:20.0085508Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T21:45:20.0156587Z http.https://github.com/.extraheader
+2026-11-27T21:45:20.0179354Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-27T21:45:20.0231895Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T21:45:20.0714367Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T21:45:20.0763645Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T21:45:20.1262833Z Cleaning up orphan processes
+2026-11-27T21:45:20.1753885Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
